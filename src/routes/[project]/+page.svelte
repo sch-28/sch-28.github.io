@@ -35,10 +35,10 @@
 							<div class="flex gap-2">
 								{project_name}
 								{#if project.live}
-									<a class="bg-white text-black" href={project.live}>Live</a>
+									<a class="bg-white text-black" href={project.live} target="_blank">Live</a>
 								{/if}
 								{#if project.github}
-									<a class="bg-white text-black" href={project.github}>GitHub</a>
+									<a class="bg-white text-black" href={project.github} target="_blank">GitHub</a>
 								{/if}
 								<p class="ml-auto">{project.date}</p>
 							</div>

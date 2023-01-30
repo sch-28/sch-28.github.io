@@ -7,7 +7,7 @@
 <div class="flex justify-center md:h-screen">
 	<div class="max-w-6xl p-4 w-full md:my-auto">
 		<p class="flex gap-2 items-center">
-			jan <a href="https://github.com/sch-28"><Github size="18" /></a><a
+			jan <a href="https://github.com/sch-28" target="_blank"><Github size="18" /></a><a
 				href="mailto:dev.sch.28@gmail.com"><Email size="18" /></a
 			>
 		</p>

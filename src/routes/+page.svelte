@@ -1,9 +1,7 @@
 <script lang="ts">
-	import { projects } from '../projects';
+	import { project_list } from '../project_data';
 </script>
 
-<h1>jan</h1>
-<h2 class="mb-2">web-developer</h2>
 <div class="md:flex flex-col space-y-2 md:space-y-0">
 	<p class="block md:hidden">projects</p>
 	<div class="md:flex hidden gap-2">
@@ -12,13 +10,14 @@
 		<p>date</p>
 	</div>
 	<hr class="border-dashed !my-2" />
-	{#each projects as project}
-		<div
-			class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer"
+	{#each project_list as project}
+		<a
+			href={project.name}
+			class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"
 		>
-			<p class="md:w-2/12">{project.name}</p>
-			<p class="flex-grow">{project.desc}</p>
+			<p class="md:w-2/12 text-blue-500">{project.name}</p>
+			<p class="flex-grow">{project.description}</p>
 			<p>{project.date}</p>
-		</div>
+		</a>
 	{/each}
 </div>

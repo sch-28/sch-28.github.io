@@ -18,10 +18,10 @@
 			{#each project_list as project}
 				<a
 					href={project.name === project_name ? '/' : `${project.name}`}
-					class="md:flex transition-colors duration-75 block cursor-default"
+					class="flex transition-colors duration-75  cursor-default"
 				>
 					<p
-						class="hover:bg-white hover:text-black md:w-2/12 text-blue-500 cursor-pointer {project.name ===
+						class="hidden md:block hover:bg-white hover:text-black w-2/12 text-blue-500 cursor-pointer {project.name ===
 						project_name
 							? 'bg-white text-black'
 							: ''}"
@@ -30,7 +30,7 @@
 					</p>
 					{#if project.name === project_name}
 						<div
-							class="w-10/12 absolute left-[16.66667%] -top-2 bottom-0 box-border border-l border-dashed p-2 h-full flex flex-col"
+							class="md:w-10/12 md:absolute left-[16.66667%] -top-2 bottom-0 box-border md:border-l border-dashed md:p-2 h-full flex flex-col"
 						>
 							<div class="flex gap-2">
 								{project_name}

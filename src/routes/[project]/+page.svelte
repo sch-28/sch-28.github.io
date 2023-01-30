@@ -18,10 +18,10 @@
 			{#each project_list as project}
 				<a
 					href={project.name === project_name ? '/' : `${project.name}`}
-					class="md:flex transition-colors duration-75 cursor-pointer block "
+					class="md:flex transition-colors duration-75 block cursor-default"
 				>
 					<p
-						class="hover:bg-white hover:text-black md:w-2/12 text-blue-500 {project.name ===
+						class="hover:bg-white hover:text-black md:w-2/12 text-blue-500 cursor-pointer {project.name ===
 						project_name
 							? 'bg-white text-black'
 							: ''}"
@@ -29,7 +29,24 @@
 						{project.name}
 					</p>
 					{#if project.name === project_name}
-						<div class="w-10/12 absolute left-[16.66667%] -top-2 bottom-0 box-border border-l border-dashed p-2">test</div>
+						<div
+							class="w-10/12 absolute left-[16.66667%] -top-2 bottom-0 box-border border-l border-dashed p-2 h-full flex flex-col"
+						>
+							<div class="flex gap-2">
+								{project_name}
+								{#if project.live}
+									<a class="bg-white text-black" href={project.live}>Live</a>
+								{/if}
+								{#if project.github}
+									<a class="bg-white text-black" href={project.github}>GitHub</a>
+								{/if}
+								<p class="ml-auto">{project.date}</p>
+							</div>
+
+							<p class="normal-case">{project.description}</p>
+
+							<div class="mt-auto" />
+						</div>
 					{/if}
 				</a>
 			{/each}

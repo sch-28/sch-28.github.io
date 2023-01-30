@@ -16,7 +16,7 @@
 			class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"
 		>
 			<p class="md:w-2/12 text-blue-500">{project.name}</p>
-			<p class="flex-grow">{project.description}</p>
+			<p class="flex-grow">{project.short_description}</p>
 			<p>{project.date}</p>
 		</a>
 	{/each}

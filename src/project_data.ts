@@ -9,6 +9,24 @@ export type Project = {
 
 export const project_list: Readonly<Project[]> = [
 	{
+		name: 'ikusa',
+		short_description:
+			'visualization tool for Black Desert Online combat events, version 3',
+		description:
+			'This is a re-creation of my nw-analyzer. It is a tool for the game Black Desert Online allowing the processing of in game logs. It is supposed to be used with the ikusa logger, allowing the user to upload a log file and to get a detailed analysis of the them. It is possible to share the analysis with other users.',
+		date: '2023',
+		live: 'https://ikusa.site/',
+		github: 'https://github.com/sch-28/ikusa'
+	},
+	{
+		name: 'ikusa-logger',
+		short_description: 'improved sniffing tool for Black Desert Online to extract combat logs',
+		description:
+			'This is a network sniffing tool for the game Black Desert Online. It records and logs all combat related messages. It is supposed to be used together with ikusa, allowing the user to upload a log file and to get a detailed analysis of the them. This is a new version of the combat_logger, featuring automatic configuration & patcher',
+		date: '2023',
+		github: 'https://github.com/sch-28/ikusa_logger'
+	},
+	{
 		name: 'kg-vis',
 		short_description: 'knowledge graph visualization tool, my bachelor thesis',
 		description:

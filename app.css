@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark {
+	/* background-color: #121212; */
+	background-color: black;
+	color: white;
+	color-scheme: dark;
+}
+
+html {
+	/* background-color: #f0f0f0; */
+	background-color: white;
+	font-family: monospace;
+	color: black;
+	color-scheme: light;
+	text-transform: lowercase;
+}

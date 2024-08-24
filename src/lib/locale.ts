@@ -5,11 +5,14 @@ export type Locale = 'en' | 'de';
 export type Translation = Record<Locale, string>;
 export const locales: Locale[] = ['en', 'de'];
 
-const initialLocale: Locale = browser ? (localStorage.getItem('locale') as Locale) : 'en';
+const initialLocale: Locale = browser
+	? ((localStorage.getItem('locale') as Locale | undefined) ?? 'en')
+	: 'en';
 export const locale = writable<Locale>(initialLocale);
 locale.subscribe((value) => {
+	if (!browser) return;
 	const newLocale = value === 'de' ? 'de' : 'en';
-	browser && localStorage.setItem('locale', newLocale);
+	localStorage.setItem('locale', newLocale);
 });
 
 function translate(locale: Locale, translations: Translation) {

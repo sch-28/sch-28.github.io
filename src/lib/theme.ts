@@ -3,7 +3,9 @@ import { browser } from '$app/environment';
 
 export type Theme = 'dark' | 'light';
 
-const initialTheme = browser ? (localStorage.getItem('theme') as Theme) : 'dark';
+const initialTheme = browser
+	? ((localStorage.getItem('theme') as Theme | undefined) ?? 'dark')
+	: 'dark';
 export const theme = writable<Theme>(initialTheme);
 theme.subscribe((value) => {
 	if (!browser) return;

@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import ArrowLeft from 'svelte-material-icons/ArrowLeft.svelte';
-	import { project_list, type Project } from '../../project_data';
+	import { project_list } from '$lib/project-data';
+	import { t } from '$lib';
 
 	$: project_name = $page.params.project;
 	$: selected_project = project_list.find((project) => project.name === project_name);
@@ -13,37 +14,45 @@
 			<ArrowLeft />
 			<p>{selected_project.name}</p>
 		</a>
-		<hr class="border-dashed !my-2" />
+		<hr class="border-dashed border-black dark:border-white !my-2" />
 		<div class="relative">
 			{#each project_list as project}
 				<a
 					href={project.name === project_name ? '/' : `${project.name}`}
-					class="flex transition-colors duration-75  cursor-default"
+					class="flex transition-colors duration-75 cursor-default"
 				>
 					<p
 						class="hidden md:block hover:bg-white hover:text-black w-2/12 text-blue-500 cursor-pointer {project.name ===
 						project_name
-							? 'bg-white text-black'
+							? 'bg-black dark:bg-white text-white dark:text-black'
 							: ''}"
 					>
 						{project.name}
 					</p>
 					{#if project.name === project_name}
 						<div
-							class="md:w-10/12 md:absolute left-[16.66667%] -top-2 bottom-0 box-border md:border-l border-dashed md:p-2 h-full flex flex-col"
+							class="md:w-10/12 md:absolute left-[16.66667%] -top-2 bottom-0 box-border md:border-l border-dashed md:p-2 h-full flex flex-col border-black dark:border-white"
 						>
 							<div class="flex gap-2">
 								{project_name}
 								{#if project.live}
-									<a class="bg-white text-black" href={project.live} target="_blank">Live</a>
+									<a
+										class="bg-black dark:bg-white text-white dark:text-black px-1"
+										href={project.live}
+										target="_blank">Live</a
+									>
 								{/if}
 								{#if project.github}
-									<a class="bg-white text-black" href={project.github} target="_blank">GitHub</a>
+									<a
+										class="bg-black dark:bg-white text-white dark:text-black px-1"
+										href={project.github}
+										target="_blank">GitHub</a
+									>
 								{/if}
 								<p class="ml-auto">{project.date}</p>
 							</div>
 
-							<p class="normal-case">{project.description}</p>
+							<p class="normal-case">{$t(project.description)}</p>
 
 							<div class="mt-auto" />
 						</div>

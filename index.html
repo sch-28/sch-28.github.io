@@ -1,28 +1,39 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+		</script>
+		
+		<link href="./_app/immutable/assets/0.DbcZkz-A.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.C_orpK0W.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.CZfWbPC3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.CRNiYzjz.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.B7OYohZz.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CA7xiTKH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.DoAF9jcp.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CG-o_sw-.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/locale.9sbKb_lQ.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.BP7Lrdxb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/project-data.CBrqVS0-.js"><title>Jan Schmidt</title><!-- HEAD_svelte-gmzuac_START --><meta name="description" content="References of Jan Schmidt"><!-- HEAD_svelte-gmzuac_END -->
+	</head>
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="./favicon.ico" />
-	<meta name="viewport" content="width=device-width" />
-	
-		<link href="./_app/immutable/assets/0.212-fNv5.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.BrgXRQ1z.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BfYuon2y.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Bmg8oFKD.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.BL5OxTYy.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.BQO7RTav.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.CdSXPUqz.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.C5uhFDzw.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/project_data.BsjN_sGt.js">
-</head>
-
-<body data-sveltekit-preload-data="hover">
-	<div style="display: contents">  <div class="flex justify-center md:h-screen"><div class="max-w-6xl p-4 w-full md:my-auto"><p class="flex gap-2 items-center">jan <a href="https://github.com/sch-28" target="_blank"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" fill="currentColor"></path></svg></a><a href="mailto:dev.sch.28@gmail.com"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 9.17L15.5 12.5L9 9.17V7.5L15.5 10.81L22 7.5V9.17M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z" fill="currentColor"></path></svg></a></p> <p class="mb-2" data-svelte-h="svelte-19hwbuq">web-developer</p> <div class="md:flex flex-col space-y-2 md:space-y-0"><p class="block md:hidden" data-svelte-h="svelte-9hhapz">projects</p> <div class="md:flex hidden gap-2" data-svelte-h="svelte-a0w7hl"><p class="w-2/12">projects</p> <p class="flex-grow ">description</p> <p>date</p></div> <hr class="border-dashed !my-2"> <a href="ikusa" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">ikusa</p> <p class="flex-grow">visualization tool for Black Desert Online combat events, version 3</p> <p>2023</p> </a><a href="ikusa-logger" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">ikusa-logger</p> <p class="flex-grow">improved sniffing tool for Black Desert Online to extract combat logs</p> <p>2023</p> </a><a href="kg-vis" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">kg-vis</p> <p class="flex-grow">knowledge graph visualization tool, my bachelor thesis</p> <p>2022</p> </a><a href="screen-2" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">screen-2</p> <p class="flex-grow">re-created my screen recorder</p> <p>2022</p> </a><a href="nw-analyzer-2" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">nw-analyzer-2</p> <p class="flex-grow">tool for Black Desert Online allowing the processing of in game logs - version 2</p> <p>2022</p> </a><a href="combat-logger" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">combat-logger</p> <p class="flex-grow">sniffing tool for Black Desert Online to extract combat logs</p> <p>2022</p> </a><a href="clever-drones" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">clever-drones</p> <p class="flex-grow">flying drones trained with tensorflow</p> <p>2022</p> </a><a href="screen" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">screen</p> <p class="flex-grow">easy to use &amp; quick web screen recorder with cropping capabilities</p> <p>2022</p> </a><a href="ytbdl" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">ytbdl</p> <p class="flex-grow">just another social media video downloader</p> <p>2022</p> </a><a href="nw-analyzer" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">nw-analyzer</p> <p class="flex-grow">tool for Black Desert Online allowing the processing of in game logs</p> <p>2022</p> </a><a href="zousho" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">zousho</p> <p class="flex-grow">comic tracker &amp; reader supporting multiple sources</p> <p>2021</p> </a><a href="boat-game" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">boat-game</p> <p class="flex-grow">multiplayer ship game, first try at shaders</p> <p>2020</p> </a><a href="time-warrior" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">time-warrior</p> <p class="flex-grow">2d top-down game prototype</p> <p>2020</p> </a><a href="stealthy-turn" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">stealthy-turn</p> <p class="flex-grow">strategy turn-based stealth game protoype</p> <p>2020</p> </a><a href="clever-cars" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">clever-cars</p> <p class="flex-grow">pathfinding trained with tensorflow</p> <p>2019</p> </a></div></div></div> 
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <div class="absolute top-2 right-2 flex items-center gap-2"><select class="bg-transparent"><option value="en" class="bg-white text-black dark:bg-black dark:text-white">en</option><option value="de" class="bg-white text-black dark:bg-black dark:text-white">de</option></select> <button class="dark:grayscale">☀️</button></div> <div class="flex justify-center md:h-screen"><div class="max-w-6xl p-4 w-full md:my-auto"><p class="flex gap-2 items-center">jan <a href="https://github.com/sch-28" target="_blank" aria-label="github"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" fill="currentColor"></path></svg></a><a href="mailto:dev.sch.28@gmail.com" aria-label="email"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 9.17L15.5 12.5L9 9.17V7.5L15.5 10.81L22 7.5V9.17M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z" fill="currentColor"></path></svg></a></p> <p class="mb-2" data-svelte-h="svelte-19hwbuq">web-developer</p> <div class="md:flex flex-col space-y-2 md:space-y-0"><p class="block md:hidden" data-svelte-h="svelte-9hhapz">projects</p> <div class="md:flex hidden gap-2" data-svelte-h="svelte-1be7hd1"><p class="w-2/12">projects</p> <p class="flex-grow">description</p> <p>date</p></div> <hr class="border-dashed border-black dark:border-white !my-2"> <a href="/project/ikusa" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">ikusa</p> <p class="flex-grow">dashboard &amp; visualization tool for 'Black Desert Online' combat events</p> <p>2023</p> </a><a href="/project/kg-vis" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">kg-vis</p> <p class="flex-grow">knowledge graph visualization tool, my bachelor thesis</p> <p>2022</p> </a><a href="/project/screen-2" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">screen-2</p> <p class="flex-grow">simple screen recorder in the browser</p> <p>2022</p> </a><a href="/project/clever-drones" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">clever-drones</p> <p class="flex-grow">flying drones trained with tensorflow</p> <p>2022</p> </a><a href="/project/ytbdl" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">ytbdl</p> <p class="flex-grow">just another social media video downloader</p> <p>2022</p> </a><a href="/project/zousho" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">zousho</p> <p class="flex-grow">comic tracker &amp; reader supporting multiple sources</p> <p>2021</p> </a><a href="/project/boat-game" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">boat-game</p> <p class="flex-grow">multiplayer ship game, first try at shaders</p> <p>2020</p> </a><a href="/project/time-warrior" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">time-warrior</p> <p class="flex-grow">2d top-down game prototype</p> <p>2020</p> </a><a href="/project/stealthy-turn" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">stealthy-turn</p> <p class="flex-grow">strategy turn-based stealth game protoype</p> <p>2020</p> </a><a href="/project/clever-cars" class="md:flex gap-2 hover:bg-white hover:text-black transition-colors duration-75 cursor-pointer block"><p class="md:w-2/12 text-blue-500">clever-cars</p> <p class="flex-grow">pathfinding trained with tensorflow</p> <p>2019</p> </a></div></div></div> 
 			
 			<script>
 				{
-					__sveltekit_sstua = {
+					__sveltekit_p03c5a = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
@@ -31,8 +42,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.BrgXRQ1z.js"),
-						import("./_app/immutable/entry/app.BL5OxTYy.js")
+						import("./_app/immutable/entry/start.C_orpK0W.js"),
+						import("./_app/immutable/entry/app.CA7xiTKH.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -44,6 +55,5 @@
 				}
 			</script>
 		</div>
-</body>
-
+	</body>
 </html>

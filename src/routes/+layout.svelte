@@ -15,7 +15,7 @@
 </svelte:head>
 
 <div class="absolute top-2 right-2 flex items-center gap-2">
-	<select bind:value={$locale} class="bg-transparent">
+	<select bind:value={$locale} class="bg-transparent" area-label="language">
 		{#each locales as l}
 			<option value={l} class="bg-white text-black dark:bg-black dark:text-white">{l}</option>
 		{/each}

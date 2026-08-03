@@ -11,6 +11,33 @@ export type Project = {
 
 export const project_list: Readonly<Project[]> = [
 	{
+		name: 'spielfluss',
+		short_description: {
+			de: 'Spielebibliothek aus allen Stores an einem Ort',
+			en: 'your whole game library in one place'
+		},
+		description: {
+			de: 'Dieses Tool sammelt deine gesamte Spielebibliothek an einem Ort und hilft dir zu entscheiden, was du spielen sollst. Es importiert automatisch von Steam, Xbox, GOG, Epic und aus lokalen ROM-Ordnern. Man kann nach Vibe statt nur nach Genre filtern oder per Swipe mit Freunden ein Spiel auswählen. Es läuft als Website, Android- und Desktop-App.',
+			en: 'This tool pulls your whole game library into one place and helps you decide what to actually play. It auto-imports from Steam, Xbox, GOG, Epic and local ROM folders, then lets you filter by vibe instead of just genre, or swipe with friends to pick a game everyone owns. It runs as a website, an android and a desktop app.'
+		},
+		date: '2026',
+		live: 'https://spielfluss.app'
+	},
+	{
+		name: 'lesefluss',
+		short_description: {
+			de: 'Lese-App für Handy, Web und ein selbstgebautes ESP32-Gerät',
+			en: 'reading app for phone, web and a self-built esp32 device'
+		},
+		description: {
+			de: 'Dies ist ein Lesesystem, das auf einem selbstgebauten ESP32-Handgerät, als mobile App und im Browser läuft. Es unterstützt einen Schnelllesemodus, bei dem einzelne Wörter nacheinander an derselben Stelle eingeblendet werden, sodass man ohne Augenbewegung lesen kann. Dazu kommen eine große Bibliothek an Büchern, ein Tracking der eigenen Lesegeschwindigkeit und Synchronisierung zwischen allen Geräten.',
+			en: 'This is a distraction-light reading system running on a self-built ESP32 handheld, a mobile app and the web. It supports a speed reading mode, flashing one word at a time in a fixed spot so you can read without moving your eyes. It also comes with a large library of books, tracking of your own reading speed and sync across every device.'
+		},
+		date: '2026',
+		live: 'https://lesefluss.app',
+		github: 'https://github.com/sch-28/lesefluss'
+	},
+	{
 		name: 'ikusa',
 		short_description: {
 			de: 'Dashboard & Visualisierungstool für "Black Desert Online"',
